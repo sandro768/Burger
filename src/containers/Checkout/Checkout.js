@@ -12,10 +12,17 @@ class Checkout extends Component {
         }
     };
 
+    checkoutCancelledHandler = () => {
+
+    };
+
     render() {
         return (
             <div>
-                <CheckoutSummary ingredients={this.state.ingredients}/>
+                <CheckoutSummary
+                    ingredients={this.state.ingredients}
+                    checkoutCancelled={}
+                    checkoutContinued/>
             </div>
         );
     }
